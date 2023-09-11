@@ -120,11 +120,30 @@
     height: 100%;
     position: fixed;
     top:0;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .modal{
     background-color: white;
     width: 90%;
     height: 90%;
-    margin: 5vh auto;
+    margin: 5vh auto ;
+    position:relative;
+  }
+
+  .modal .close_modal span{
+    color:black;
+    right: 8px;
+    top:7px;
+    cursor:pointer ;
+    position:absolute;
+    
+  }
+
+  /* === modal overlay active === */
+
+  .modal_overlay.active {
+    opacity: 1;
+    visibility: visible;
   }
