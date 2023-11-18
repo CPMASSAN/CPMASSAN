@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+ :root{  /* inciando a variavel*/
+  --subcor: #57a615; /* nomeando a variavel de --subcor e guardadno uma cor nela.*/
+ } /* Fechando a o bloco da variavel root.*/
+*{ margin:0;
+   padding: 0;
+   border: 0;     
+   font-family: 'Roboto', sans-serif; 
+   color: white;
+   text-decoration: none;
+}
+  body  {
+    background-color: #252525;
+  }
+  header {
+    padding: 32px;
+    border-bottom: 3px solid var(--subcor);
+    background-color: rgba(0, 0,0, 0.1);
+  }
+  .links  {
+    text-align: center;
+  }
+
+  .links a {
+    color:white;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 16px;
+    text-decoration: none;
+    
+  }
+  .links a:hover {
+    color: var(--subcor);
+    transition: 600ms;
+    font-size: 23px;
+  }
+  #box  {
+    text-align: center;
+    padding-top: 23px;
+  }
+
+  #box img {
+    border-radius: 50%;
+    margin-bottom: 32px;
+    
+  }
+  #box img:hover {
+    transition: 700ms;
+    border-top: 3px solid var(--subcor);
+    border-bottom: 3px solid var(--subcor);
+    
+  }
+  #box h1   {
+    padding: 4px;
+  }
+
+  #box h2   {
+    padding: 10px;
+}
+  #box p:hover {
+    font-size: 23px;
+  }
+
+  #box  a {
+    color: var(--subcor);
+    transition: 600ms; 
+  }
+
+  #linksFooter  {
+    padding-top: 32px;
+  }
+
+  #linksFooter a {
+   margin-top: 32px;
+
+    
+  }
+  #linksFooter a:hover {
+    border:3px solid var(--subcor) ;
+  }
+
+  .cards {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+  }
+  .card {
+    background-color: #171515;
+    cursor: pointer;
+  }
+
+  .card_image img {
+    width: 100%;
+  }
+
+  .card_content,.card_info{
+    padding: 18px;
+  }
+
+  .card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .card_price {
+    background-color: gray;
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .modal_overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto ;
+    position:relative;
+  }
+
+  .modal .close_modal span{
+    color:black;
+    right: 8px;
+    top:7px;
+    cursor:pointer ;
+    position:absolute;
+    
+  }
+
+  /* === modal overlay active === */
+
+  .modal_overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+   iframe{
+    width:100% ;
+    height: 100%;
+    position: absolute;
+    top:5%;
+  }
+
+  /* === featured === */
+   .isfeatured.card_image{
+    position: relative;
+   }
+
+   .featured {
+    position: absolute;
+    background-color: #57a615;
+    color:#171515;
+    padding: 2px 8px;
+    right: 5px;
+    border-radius: 16px;
+    top: -6px;
+   }
+
+   /* Video Unico */ 
+
+   .video {
+    margin:0 auto ;
+    max-width: 800px;
+   }
+
+   .card_only {
+    position: relative;
+    padding-top: 62.5%;
+   }
+
+   .card_only iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top:5%;
+   }
